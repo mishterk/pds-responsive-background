@@ -29,4 +29,18 @@ By setting up your markup a particular way, this module can just do what it does
 ````
 
 The module knows to look for any elements with the `js-responsive-bg` CSS class, and initilise itself based on the data
-provided in the `data-bg-images` attribute. 
+provided in the `data-bg-images` attribute.
+ 
+###Example 2: Manual init, the jQuery way
+
+Assuming we are using this on an element that does not have the 'js-responsive-bg' class but does have the necessary data attribute;
+
+````html
+<div class="some-other-element"
+    data-bg-images='{"0":"img/xs.jpg", "320":"img/sm.jpg", "768":"img/md.jpg", "1024":"img/lg.jpg"}'>
+</div>
+````
+The JS;
+````javascript
+$('.some-other-element').responsiveBackground();
+````
