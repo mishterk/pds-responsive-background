@@ -79,9 +79,11 @@ var PDS = (function ($, window, document, PDS, undefined) {
     });
 
     // Auto-init on elements with particular CSS class
-    var $bgImages = $(CSS_CLASS);
-    if ($bgImages.length)
-        $bgImages.responsiveBackground();
+    $(document).ready(function () {
+        var $bgImages = $(CSS_CLASS);
+        if ($bgImages.length)
+            $bgImages.responsiveBackground();
+    });
 
     /**
      * ResponsiveBackground
@@ -117,7 +119,7 @@ var PDS = (function ($, window, document, PDS, undefined) {
         };
 
         // If sizes prop exists, auto init
-        if(this.sizes !== undefined)
+        if (this.sizes !== undefined)
             this.init();
     }
 
