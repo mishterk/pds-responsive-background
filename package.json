@@ -1,17 +1,8 @@
 {
-  "name": "responsivebackgroundimages",
-  "version": "1.0.1",
-  "description": "Responsive Background Images Tasks",
+  "name": "pds-responsive-background",
+  "version": "0.1.0",
+  "description": "ResponsiveBackground module for the PDS global object",
   "main": "Gruntfile.js",
-  "author": "Robert Nurijanyan",
-  "devDependencies": {
-    "glob": "^5.0.3",
-    "grunt": "^0.4.5",
-    "grunt-contrib-cssmin": "^0.11.0",
-    "grunt-contrib-jshint": "^0.11.0",
-    "grunt-contrib-uglify": "^0.7.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-notify": "^0.4.1",
-    "jit-grunt": "^0.9.1"
-  }
+  "author": "Phil Smart",
+  "devDependencies": {}
 }

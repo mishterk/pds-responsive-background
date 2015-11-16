@@ -2,42 +2,26 @@
 <html>
 
 <head>
-    <!-- META -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Responsive Background Images</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <!--
-            The inline style element is not required but recommended as fallback
-            This (usually) should be the image with the lowest filesize
-        -->
-        <div class="bg-responsive" data-xs="img/xs.jpg" data-sm="img/sm.jpg" data-md="img/md.jpg" data-lg="img/lg.jpg"></div>
+<div class="wrapper">
+
+    <div class="js-responsive-bg"
+         data-bg-images='{"0":"img/xs.jpg", "320":"img/sm.jpg", "768":"img/md.jpg", "1024":"img/lg.jpg"}'>
     </div>
 
-    <!-- SCRIPTS -->
-    <script src="js/bg-responsive.js"></script>
+</div>
 
-    <script type="text/javascript">
-        // Initialize Responsive Background Images
-        /*ResponsiveBackgrounds.init({
-            interval: 10
-        });*/
-
-        // Get current breakpoint
-        //console.log(ResponsiveBackgrounds.currentBreakpoint());
-
-        // Watch for breakpoint changes
-        //window.addEventListener('resize', function(){ console.log(ResponsiveBackgrounds.currentBreakpoint()); }, false);
-
-    </script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/debouncedresize.js"></script>
+<script src="js/pds-breakpoints.js"></script>
+<script src="js/pds-responsive-background.js"></script>
 
 </body>
 
