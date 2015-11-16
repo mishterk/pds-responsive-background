@@ -6,7 +6,7 @@ and their corresponding background image URLs and dynamically swaps out the back
 ##Dependencies
 - jQuery
 - *debouncedresize* event ([link](https://github.com/louisremi/jquery-smartresize))
-- **PDS.Breakpoints** module
+- **PDS.Breakpoints** module (see JS dir)
 
 ##Usage 
 
