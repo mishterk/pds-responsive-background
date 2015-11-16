@@ -8,11 +8,15 @@ and their corresponding background image URLs and dynamically swaps out the back
 - *debouncedresize* event ([link](https://github.com/louisremi/jquery-smartresize))
 - **PDS.Breakpoints** module
 
-##Usage
+##Usage 
 
-First, include the necessary scripts in your HTML document. 
+There are a few ways this module can be used. First off, let's cover the important general points that you need to know;
 
-There are a few ways this module can be used;
+1. You need to include the necessary scripts in your HTML document. See the `index.html` file for an example.
+2. The `js-responsive-bg` CSS class is only required if you want the plugin to automatically initialise on an element.
+3. The breakpoint data is passed to the plugin via the `data-bg-images` HTML attribute. The data is a JSON object. 
+4. The breakpoint values are not fixed in any way. Use whatever numbers are necessary to match your breakpoint requirements.
+5. The plugin actively monitors and updates the background images on both *debouncedresize* and *orientationchange* events. This is a function of the `PDS.Breakpoints` module.
 
 ###Example 1: Automatically 
 
