@@ -17,6 +17,7 @@ There are a few ways this module can be used. First off, let's cover the importa
 3. The breakpoint data is passed to the plugin via the `data-bg-images` HTML attribute. The data is a JSON object. 
 4. The breakpoint values are not fixed in any way. Use whatever numbers are necessary to match your breakpoint requirements.
 5. The plugin actively monitors and updates the background images on both *debouncedresize* and *orientationchange* events. This is a function of the `PDS.Breakpoints` module.
+6. The plugin does not modify the dimensions of the containing element in any way; so, you need to control your div sizes using CSS, otherwise you probably won't see the div at all.
 
 ###Example 1: Automatically 
 
