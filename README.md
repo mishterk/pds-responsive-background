@@ -31,7 +31,7 @@ By setting up your markup a particular way, this module can just do what it does
 The module knows to look for any elements with the `js-responsive-bg` CSS class, and initilise itself based on the data
 provided in the `data-bg-images` attribute.
  
-###Example 2: Manual init, the jQuery way
+###Example 2: Manual init
 
 Assuming we are using this on an element that does not have the 'js-responsive-bg' class but does have the necessary data attribute;
 
@@ -40,22 +40,14 @@ Assuming we are using this on an element that does not have the 'js-responsive-b
     data-bg-images='{"0":"img/xs.jpg", "320":"img/sm.jpg", "768":"img/md.jpg", "1024":"img/lg.jpg"}'>
 </div>
 ````
-The JS;
+The jQuery way;
 ````javascript
 $('.some-other-element').responsiveBackground();
 ````
 
-###Example 3: Manual init, the vanilla way
-Assuming we are using this on an element that does not have the 'js-responsive-bg' class but does have the necessary data attribute;
-````html
-<div class="some-other-element"
-    data-bg-images='{"0":"img/xs.jpg", "320":"img/sm.jpg", "768":"img/md.jpg", "1024":"img/lg.jpg"}'>
-</div>
-````
-The JS;
+The Vanilla JS way;
 ````javascript
 // Select a DOM node however you like
-var domNote = document.querySelector(".some-other-element"); // vanilla JS
-var domNode = $('.some-other-element')[0]; // using jQuery to select
+var domNote = document.querySelector(".some-other-element");
 new PDS.ResponsiveBackground(domNode); // instantiate the object, passing the DOM node
 ````
