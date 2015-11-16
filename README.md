@@ -48,6 +48,18 @@ $('.some-other-element').responsiveBackground();
 The Vanilla JS way;
 ````javascript
 // Select a DOM node however you like
-var domNote = document.querySelector(".some-other-element");
+var domNode = document.querySelector(".some-other-element");
 new PDS.ResponsiveBackground(domNode); // instantiate the object, passing the DOM node
+````
+
+###Example 3: Javascript driven manual init (no data attribute)
+Assuming we are using this on an element that does not have the 'js-responsive-bg' class.
+````html
+<div class="some-other-element"></div>
+````
+The JavaScript;
+````javascript
+var respBgEl = new PDS.ResponsiveBackground($('.some-other-element'));
+respBgEl.sizes = { 0: "img/xs-alt.jpg", 320: "img/sm-alt.jpg", 768: "img/md-alt.jpg", 1024: "img/lg-alt.jpg"};
+respBgEl.init();
 ````
